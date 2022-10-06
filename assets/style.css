@@ -1,6 +1,31 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 20;
 }
 
+.refresh {
+    background-color: rgb(114, 200, 228);
+    border: none;
+    color: #0a0a0a;
+    padding: 15px 20px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: background-color 1s,
+        color 1s;
+}
+
+.refresh:hover {
+    background-color: rgb(70, 160, 190);
+}
+
+.refresh:active {
+    opacity: 0.8;
+    
+}
