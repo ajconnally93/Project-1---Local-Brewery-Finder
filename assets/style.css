@@ -6,6 +6,13 @@
 
 .top-bar-left {
     text-align: center;
+    font-weight: bold;
+}
+
+.refreshButton {
+    margin-top: 0.5%;
+    margin-left: 50%;
+    float: center;
 }
 
 .refresh {
@@ -32,4 +39,15 @@
 .refresh:active {
     opacity: 0.8;
     
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-left: 5%
 }
