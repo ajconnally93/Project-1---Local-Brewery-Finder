@@ -4,15 +4,15 @@
     margin: 20;
 }
 
+/*  */
+/*  */
 .top-bar-left {
     text-align: center;
     font-weight: bold;
 }
 
 .refreshButton {
-    margin-top: 0.5%;
-    margin-left: 50%;
-    float: center;
+    margin-left: 45%;
 }
 
 .refresh {
