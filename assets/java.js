@@ -23,7 +23,28 @@ function getApi (userCity) {
 
             for (var i = 0; i < 5; i++) {
 
+
                 document.getElementById("place" + [i]).textContent = data[i].name;
+
+                if (document.getElementById("address" + [i]).textContent = data[i].street == null) {
+                    document.getElementById("address" + [i]).textContent = "No address available :(";
+                } else {
+                    document.getElementById("address" + [i]).textContent = 'Address: ' + data[i].street + ', ' + data[i].city + ', ' + data[i].state;
+                }
+
+                if (document.getElementById("phone" + [i]).textContent = data[i].street == null) {
+                    document.getElementById("phone" + [i]).textContent = "No phone number available :(";
+                } else {
+                    document.getElementById("phone" + [i]).textContent = 'Phone: ' + data[i].phone;
+                }
+
+                if (document.getElementById("type" + [i]).textContent = data[i].street == null) {
+                    document.getElementById("type" + [i]).textContent = "Brewery type unavailable :(";
+                } else {
+                    document.getElementById("type" + [i]).textContent = "Brewery type: " + data[i].brewery_type;
+                }
+
+                // document.getElementById("address" + [i]).textContent = data[i].street;
 
                 // document.getElementById("panel" + [i] + "v").textContent = data[i].name;
                 // document.getElementsByClassName("tabs-title").textContent = data[i].name;
