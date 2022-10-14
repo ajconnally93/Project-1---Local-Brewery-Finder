@@ -4,21 +4,21 @@
     margin: 20;
 }
 
-.top-bar-left {
+.top-page {
     text-align: center;
     font-weight: bold;
+    background-color: darkgray;
+    height: 100px;
+    padding-top: 15px;
 }
 
-.refreshButton {
-    margin-left: 45%;
-}
-
-.refresh {
+#submit {
     background-color: rgb(114, 200, 228);
     border: none;
     color: #0a0a0a;
-    padding: 15px 20px;
-    margin-top: 40px;
+    padding: 0px 15px;
+    margin-left: 5px;
+    margin-top: 0px;
     margin-bottom: 40px;
     height: 50px;
     border-radius: 25px;
@@ -32,11 +32,11 @@
         color 1s;
 }
 
-.refresh:hover {
+#submit:hover {
     background-color: rgb(70, 160, 190);
 }
 
-.refresh:active {
+#submit:active {
     opacity: 0.8;
     
 }
