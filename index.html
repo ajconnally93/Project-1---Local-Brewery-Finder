@@ -1,77 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plane Tracking and Weather</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plane Tracking and Weather</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
-<body>
+
+<main>
+  <div class="top-page">
+
+    <div class="top-bar">
+      <div class="top-bar-left">
+        Find Your Local Brewery!
+      </div>
+      <div class="top-bar-right">
+      </div>
+    </div>
+
+  </div>
+
   <form id="cityForm">
     <label for="cname">Start typing your city here:</label><br>
     <input type="text" id="cname" name="cname" placeholder="City"><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Search" id="submit">
   </form>
-  
-  </body>
 
-    <main>
-        <div class="top-page">
-
-            <div class="top-bar">
-                <div class="top-bar-left">
-                    Cocktail Generator
-                </div>
-                <div class="top-bar-right">
-                </div>
-              </div>
-
-        </div>
-        <div class="refreshButton">
-            <button class="refresh">Refresh</button>
-        </div>
-        
-        <div class="grid-container">
-            <div class="grid-x">
-              <div class="cell medium-3">
-                <ul class="vertical tabs" data-tabs id="example-tabs">
-                  <li class="tabs-title is-active"><a href="#panel0v" id="place0" aria-selected="true">Place 1</a></li>
-                  <li class="tabs-title"><a href="#panel1v" id="place1">Place 2</a></li>
-                  <li class="tabs-title"><a href="#panel2v" id="place2">Place 3</a></li>
-                  <li class="tabs-title"><a href="#panel3v" id="place3">Place 4</a></li>
-                  <li class="tabs-title"><a href="#panel4v" id="place4">Place 5</a></li>
-                  <!-- <li class="tabs-title"><a href="#panel5v">Cocktail 6</a></li>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell medium-3">
+        <ul class="vertical tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel0v" id="place0" aria-selected="true">Place 1</a></li>
+          <li class="tabs-title"><a href="#panel1v" id="place1">Place 2</a></li>
+          <li class="tabs-title"><a href="#panel2v" id="place2">Place 3</a></li>
+          <li class="tabs-title"><a href="#panel3v" id="place3">Place 4</a></li>
+          <li class="tabs-title"><a href="#panel4v" id="place4">Place 5</a></li>
+          <!-- <li class="tabs-title"><a href="#panel5v">Cocktail 6</a></li>
                   <li class="tabs-title"><a href="#panel6v">Cocktail 7</a></li>
                   <li class="tabs-title"><a href="#panel7v">Cocktail 8</a></li>
                   <li class="tabs-title"><a href="#panel8v">Cocktail 9</a></li>
                   <li class="tabs-title"><a href="#panel9v">Cocktail 10</a></li> -->
-                </ul>
-              </div>
-              <div class="cell medium-9">
-                <div class="tabs-content vertical" data-tabs-content="example-tabs">
-                  <div class="tabs-panel is-active" id="panel0v">
-                    <p>Cocktail Ingredients; </p>
-                    <p>Cocktail Image; </p>
-                  </div>
-                  <div class="tabs-panel" id="panel1v">
-                    <p>TERSTAWTAWOPIJTAWJIOPW; </p>
-                    <p>Cocktail Image; </p>
-                  </div>
-                  <div class="tabs-panel" id="panel2v">
-                    <p>Cocktail Ingredients; </p>
-                    <p>Cocktail Image; </p>
-                  </div>
-                  <div class="tabs-panel" id="panel3v">
-                    <p>Cocktail Ingredients; </p>
-                    <p>Cocktail Image; </p>
-                  </div>
-                  <div class="tabs-panel" id="panel4v">
-                    <p>Cocktail Ingredients; </p>
-                    <p>Cocktail Image; </p>
-                  </div>
-                  <!-- <div class="tabs-panel" id="panel5v">
+        </ul>
+      </div>
+      <div class="cell medium-9">
+        <div class="tabs-content vertical" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel0v">
+            <p>Cocktail Ingredients; </p>
+            <p>Cocktail Image; </p>
+          </div>
+          <div class="tabs-panel" id="panel1v">
+            <p>TERSTAWTAWOPIJTAWJIOPW; </p>
+            <p>Cocktail Image; </p>
+          </div>
+          <div class="tabs-panel" id="panel2v">
+            <p>Cocktail Ingredients; </p>
+            <p>Cocktail Image; </p>
+          </div>
+          <div class="tabs-panel" id="panel3v">
+            <p>Cocktail Ingredients; </p>
+            <p>Cocktail Image; </p>
+          </div>
+          <div class="tabs-panel" id="panel4v">
+            <p>Cocktail Ingredients; </p>
+            <p>Cocktail Image; </p>
+          </div>
+          <!-- <div class="tabs-panel" id="panel5v">
                     <p>Cocktail Ingredients; </p>
                     <p>Cocktail Image; </p>
                   </div>
@@ -90,26 +87,27 @@
                   <div class="tabs-panel" id="panel9v">
                     <p>Cocktail Ingredients; </p>
                     <p>Cocktail Image; </p> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
-    </main>
+</main>
 
-        <footer id="footer">
-            <a href="https://www.github.com/TylerKandarian" target="_blank">Tyler</a>
-            <a href="https://www.github.com/ajconnally93" target="_blank">Andrew</a>
-            <a href="https://www.github.com/FullStackFranklin" target="_blank">Malika</a>
-            <a href="https://www.github.com/isthatsilva" target="_blank">David</a>
-        </footer>
+<footer id="footer">
+  <a href="https://www.github.com/TylerKandarian" target="_blank">Tyler</a>
+  <a href="https://www.github.com/ajconnally93" target="_blank">Andrew</a>
+  <a href="https://www.github.com/FullStackFranklin" target="_blank">Malika</a>
+  <a href="https://www.github.com/isthatsilva" target="_blank">David</a>
+</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
 <script>
-	$(document).foundation();
+  $(document).foundation();
 </script>
 <script src="./assets/java.js"></script>
 </body>
+
 </html>
