@@ -43,12 +43,28 @@ function getApi (userCity) {
                 } else {
                     document.getElementById("type" + [i]).textContent = "Brewery type: " + data[i].brewery_type;
                 }
-
+                //when the data is loading then it will check for a map value of "latitute" which if null then will not load map but skip to the next i
+                if (data[i].latitude==null){
+                    document.getElementById("map" + [i]).innerHTML="Map Not Available";
+                } else {
+                    mapboxgl.accessToken = 'pk.eyJ1IjoibWltaWxvdmVzY29kaW5nIiwiYSI6ImNsOTliYjR6ODF3OHgzb3FtejFmNzN1ZnEifQ.wcXaCrnlX1FTlPxTV2Ueow';
+                    const map = new mapboxgl.Map({
+                        container: 'map'+i, // container ID
+                        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+                        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+                        center: [-74.5, 40], // starting position [lng, lat]
+                        zoom: 9, // starting zoom
+                        projection: 'globe' // display the map as a 3D globe
+                    });
+                    
+                    map.on('style.load', () => {
+                        map.setFog({}); // Set the default atmosphere style
+                    });
+                }
+                
                 // document.getElementById("address" + [i]).textContent = data[i].street;
 
-                // document.getElementById("panel" + [i] + "v").textContent = data[i].name;
-                // document.getElementsByClassName("tabs-title").textContent = data[i].name;
-
+                
                 console.log(data[i].name);
             }
             // console.log(data[0].name);
@@ -57,6 +73,7 @@ function getApi (userCity) {
             // console.log(data["Nearby Airports"][0].Airport)
             // data["Object Name"][#inObject].ObjectKey
 
+            
             // have to use data inside this callback function (EX: appending to an HTML Element)
         })
 

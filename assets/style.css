@@ -62,3 +62,18 @@ h4 {
     margin-left: 25%;
     margin-right: 25%;
 }
+.obrewerymap {
+    display: flex;
+    width: 100%;
+}
+.ibrewery {
+    width: 70%;
+}
+.imap{
+    width: 30%;
+}
+
+.imap div{
+    width: 100%;
+    height: 100%;
+}
