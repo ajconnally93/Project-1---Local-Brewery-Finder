@@ -47,13 +47,16 @@ function getApi (userCity) {
                 if (data[i].latitude==null){
                     document.getElementById("map" + [i]).innerHTML="Map Not Available";
                 } else {
+                    let nLatitude = data[i].latitude;
+                    let nLongitude = data[i].longitude;
                     mapboxgl.accessToken = 'pk.eyJ1IjoibWltaWxvdmVzY29kaW5nIiwiYSI6ImNsOTliYjR6ODF3OHgzb3FtejFmNzN1ZnEifQ.wcXaCrnlX1FTlPxTV2Ueow';
                     const map = new mapboxgl.Map({
                         container: 'map'+i, // container ID
+                        attributionControl:false,
                         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
                         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                        center: [-74.5, 40], // starting position [lng, lat]
-                        zoom: 9, // starting zoom
+                        center: [nLongitude,nLatitude], // starting position [lng, lat]
+                    zoom: 15, // starting zoom to ensure user can see the map location close-up
                         projection: 'globe' // display the map as a 3D globe
                     });
                     
