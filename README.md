@@ -1,65 +1,31 @@
-# <Brewery-Locator>
+<Brewery-Locator>
 
-## Description
+As a group of Craft Beer enjoyers, we wanted to build an application where we could type in the name of our city, or any city we may travel to (and thus, as a visitor, not be as aware of their Craft Brewery options), and be shown a list of breweries with their address, phone number, brewery type, and where they are located on a map.
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This solves the problem of having to individually look at each different brewery in a new tab while searching the internet. Now, you get 5 breweries auto-populated, on one page, easy to click on with all the information you would need to make your decision. This is especially helpful when visiting a city you aren't as familiar with.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+As a team, we learned how to use multiple API's that interact with one another in order to pull data from a 3rd party source for the end user to interact with. We also learned how to properly use Git and GitHub to practice proper source control, workflow, communication within a team, and work delegation.
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
 ## Features
 
-If your project has a lot of features, list them here.
+* Ability to search for breweries by typing a City name in the search bar, which provides the names, addresses, phone numbers, and brewery types for each on a single page. 
+
+* Ability to view where these breweries are on a map to the right side of the page.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+If you would like to contribute, you can locally clone our REPO at https://github.com/ajconnally93/Project-1---Flight-Tracking-Weather-Enthusiasts , create your own branch, commit any changes and create a Pull request for one of us to approve. We practice a Kanban system with individual opened Issues, tasks, and ToDos that you may set to as being 'in progress' if you choose to contribute.
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+* Nashville: all map and brewery info available
+* Birmingham: API missing data (address, phone number, brewery type) with 2 breweries - 'missing data' text content set to show user
+* Atlanta: Brewery API missing data to pass through map API - 'missing data' text content set to show user
+
+
+<!-- ![Screenshot](https:www.google.com) -->
+
+GitHub REPO link: https://github.com/ajconnally93/Project-1---Flight-Tracking-Weather-Enthusiasts
+
+Fully working deployed link (uses GitHub pages): https://ajconnally93.github.io/Project-1---Flight-Tracking-Weather-Enthusiasts/
