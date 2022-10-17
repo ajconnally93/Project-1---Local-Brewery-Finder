@@ -13,6 +13,7 @@
 }
 h1 {
     background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
