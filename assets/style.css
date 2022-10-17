@@ -7,9 +7,22 @@
 .top-page {
     text-align: center;
     font-weight: bold;
-    background-color: darkgray;
+    background-color: #222;
     height: 100px;
     padding-top: 15px;
+}
+h1 {
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tabs-title {
+    background-color: lightgray;
+}
+
+.tabs-panel {
+    background-color: rgb(230, 230, 230);
 }
 
 h4 {
