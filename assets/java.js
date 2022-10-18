@@ -15,8 +15,7 @@ function getApi (userCity) {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
-
+            // This for loop grabs HTML ID's by name & number[i], and adds text content based on the arrays of Data pulled from the Brewery API
             for (var i = 0; i < 5; i++) {
 
                 document.getElementById("place" + [i]).textContent = data[i].name;
@@ -38,7 +37,7 @@ function getApi (userCity) {
                 } else {
                     document.getElementById("type" + [i]).textContent = "Brewery type: " + data[i].brewery_type;
                 }
-                //when the data is loading then it will check for a map value of "latitute" which if null then will not load map but skip to the next i
+                //when the data is loading then it will check for a map value of "latitude" which if null then will not load map but skip to the next i
                 if (data[i].latitude==null){
                     document.getElementById("map" + [i]).innerHTML="Map Not Available";
                 } else {
@@ -63,6 +62,8 @@ function getApi (userCity) {
         })
 }
 
+
+// Allows us to set multiple items under the same key in localStorage as an array
 var cname = document.getElementById('cname');
 var citySearched = localStorage.getItem("citySearched");
 var citySearchedArray = citySearched?JSON.parse(citySearched):[];
