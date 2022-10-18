@@ -1,4 +1,4 @@
-<Brewery-Locator>
+## Brewery-Locator
 
 As a group of Craft Beer enjoyers, we wanted to build an application where we could type in the name of our city, or any city we may travel to (and thus, as a visitor, not be as aware of their Craft Brewery options), and be shown a list of breweries with their address, phone number, brewery type, and where they are located on a map.
 
@@ -12,6 +12,8 @@ As a team, we learned how to use multiple API's that interact with one another i
 * Ability to search for breweries by typing a City name in the search bar, which provides the names, addresses, phone numbers, and brewery types for each on a single page. 
 
 * Ability to view where these breweries are on a map to the right side of the page.
+
+* Ability to see your previously searched cities.
 
 ## How to Contribute
 
