@@ -1,7 +1,3 @@
-// ADD EVENT LISTENER HERE FOR FORM ON TOP OF PAGE
-// SEND DATA TO JS FILE UPON CLICKING SUBMIT
-// POPULATE DATA ON EACH LIST ITEM
-
 var cityForm = document.getElementById("cityForm");
 
 function submitData (event) {
@@ -22,7 +18,6 @@ function getApi (userCity) {
             console.log(data);
 
             for (var i = 0; i < 5; i++) {
-
 
                 document.getElementById("place" + [i]).textContent = data[i].name;
 
@@ -64,20 +59,7 @@ function getApi (userCity) {
                         map.setFog({}); // Set the default atmosphere style
                     });
                 }
-                
-                // document.getElementById("address" + [i]).textContent = data[i].street;
-
-                
-                console.log(data[i].name);
             }
-            // console.log(data[0].name);
-
-            // Use For Loop to log 10 Airports through this pseudocode
-            // console.log(data["Nearby Airports"][0].Airport)
-            // data["Object Name"][#inObject].ObjectKey
-
-            
-            // have to use data inside this callback function (EX: appending to an HTML Element)
         })
 }
 

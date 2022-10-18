@@ -17,7 +17,7 @@ As a team, we learned how to use multiple API's that interact with one another i
 
 ## How to Contribute
 
-If you would like to contribute, you can locally clone our REPO at https://github.com/ajconnally93/Project-1---Flight-Tracking-Weather-Enthusiasts , create your own branch, commit any changes and create a Pull request for one of us to approve. We practice a Kanban system with individual opened Issues, tasks, and ToDos that you may set to as being 'in progress' if you choose to contribute.
+If you would like to contribute, you can locally clone our REPO at https://github.com/ajconnally93/Project-1---Local-Brewery-Finder , create your own branch, commit any changes and create a Pull request for one of us to approve. We practice a Kanban system with individual opened Issues, tasks, and ToDos that you may set to as being 'in progress' if you choose to contribute.
 
 ## Tests
 
@@ -26,8 +26,8 @@ If you would like to contribute, you can locally clone our REPO at https://githu
 * Atlanta: Brewery API missing data to pass through map API - 'missing data' text content set to show user
 
 
-<!-- ![Screenshot](https:www.google.com) -->
+![Screenshot of finished Website](https://i.imgur.com/sL411L2.png)
 
-GitHub REPO link: https://github.com/ajconnally93/Project-1---Flight-Tracking-Weather-Enthusiasts
+GitHub REPO link: https://github.com/ajconnally93/Project-1---Local-Brewery-Finder
 
-Fully working deployed link (uses GitHub pages): https://ajconnally93.github.io/Project-1---Flight-Tracking-Weather-Enthusiasts/
+Fully working deployed link (uses GitHub pages): https://ajconnally93.github.io/Project-1---Local-Brewery-Finder/
