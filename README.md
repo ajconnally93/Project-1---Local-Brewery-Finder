@@ -1,4 +1,4 @@
-<Brewery-Locator>
+## Brewery-Locator
 
 As a group of Craft Beer enjoyers, we wanted to build an application where we could type in the name of our city, or any city we may travel to (and thus, as a visitor, not be as aware of their Craft Brewery options), and be shown a list of breweries with their address, phone number, brewery type, and where they are located on a map.
 
