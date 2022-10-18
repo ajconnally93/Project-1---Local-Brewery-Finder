@@ -13,6 +13,8 @@ As a team, we learned how to use multiple API's that interact with one another i
 
 * Ability to view where these breweries are on a map to the right side of the page.
 
+* Ability to see your previously searched cities.
+
 ## How to Contribute
 
 If you would like to contribute, you can locally clone our REPO at https://github.com/ajconnally93/Project-1---Flight-Tracking-Weather-Enthusiasts , create your own branch, commit any changes and create a Pull request for one of us to approve. We practice a Kanban system with individual opened Issues, tasks, and ToDos that you may set to as being 'in progress' if you choose to contribute.

@@ -79,7 +79,33 @@ function getApi (userCity) {
             
             // have to use data inside this callback function (EX: appending to an HTML Element)
         })
-
 }
 
-// getApi ();
+var cname = document.getElementById('cname');
+var citySearched = localStorage.getItem("citySearched");
+var citySearchedArray = citySearched?JSON.parse(citySearched):[];
+function searchedCity () {
+    var citySearchedValue = cname.value;
+    citySearchedArray.push(citySearchedValue);
+    localStorage.setItem("citySearched", JSON.stringify(citySearchedArray));
+    citySearched = localStorage.getItem("citySearched");
+    citySearchedArray = JSON.parse(citySearched);
+}
+
+var olEl = document.getElementById("recentSearches");
+function renderCity () {
+    for (var i = 0; i < citySearchedArray.length; i++) {
+        var liTag = document.createElement('span');
+        if (i != 0) {
+            liTag.textContent = ', ' + citySearchedArray[i];
+        } else {
+            liTag.textContent = citySearchedArray[i];
+        }
+        olEl.appendChild(liTag);
+    }
+}
+
+cityForm = document.getElementById('cityForm');
+cityForm.addEventListener("submit", searchedCity);
+
+renderCity ();
